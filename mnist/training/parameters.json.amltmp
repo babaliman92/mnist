@@ -1,0 +1,24 @@
+{
+    "training":
+    {
+        "n_inputs" : 784,
+        "n_h1" : 300,
+        "n_h2" : 100,
+        "n_outputs" : 10,
+        "n_epochs" : 20,
+        "batch_size" : 50,
+        "learning_rate" : 0.001
+    },
+    "evaluation":
+    {
+
+    },
+    "registration":
+    {
+        "tags": ["accuracy"]
+    },
+    "scoring":
+    {
+        
+    }
+}

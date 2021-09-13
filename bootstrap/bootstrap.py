@@ -26,7 +26,7 @@ class Helper:
 
     def rename_files(self):
         # Rename all files starting with diabetes_regression with project name
-        strtoreplace = "diabetes_regression"
+        strtoreplace = "minist"
         dirs = [".pipelines", r"ml_service/pipelines"]
         for dir in dirs:
             normDir = os.path.normpath(dir)

@@ -11,7 +11,7 @@ def get_environment(
     conda_dependencies_file: str,
     create_new: bool = False,
     enable_docker: bool = None,
-    use_gpu: bool = False
+    use_gpu: bool = True
 ):
     try:
         e = Env()
