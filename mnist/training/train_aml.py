@@ -29,7 +29,7 @@ import os
 import argparse
 import joblib
 import json
-from train import split_data, train_model, get_model_metrics
+from train import preprocess_df, train_model, get_model_metrics
 
 
 
@@ -118,7 +118,7 @@ def main():
 
 
     # Preprocess data
-    data = split_data(data_folder)
+    data = preprocess_df(data_folder)
 
     # Train the model
     model = train_model(data)
