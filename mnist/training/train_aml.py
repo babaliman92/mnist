@@ -110,7 +110,9 @@ def main():
         run.parent.log(k, v)
 
     # Get the dataset
-    dataset = Dataset.get_by_name(aml_workspace,dataset_name)
+    # dataset = Dataset.get_by_name(aml_workspace,dataset_name)
+    
+    dataset = Dataset.get_by_name(run.experiment.workspace, dataset_name, dataset_version)
 
     # Link dataset to the step run so it is trackable in the UI
     run.input_datasets['training_data'] = dataset
