@@ -118,7 +118,7 @@ def main():
 
     data_folder = os.path.join(os.path.dirname(os.path.dirname(os.getcwd())), 'data')
 
-    # data = preprocess_df(data_folder)
+    data = preprocess_df(data_folder)
 
     # Train the model
     model = train_model(data)
