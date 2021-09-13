@@ -72,7 +72,8 @@ def main():
                                description='training and test dataset',
                                create_new_version=True)
 
-
+    
+    dataset = Dataset.get_by_name(aml_workspace, 'mnist-dataset')
 
     # Create a PipelineData to pass data between steps
     pipeline_data = PipelineData(
