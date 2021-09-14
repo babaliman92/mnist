@@ -10,6 +10,7 @@ from ml_service.util.manage_environment import get_environment
 import os
 
 
+
 def main():
     e = Env()
     # Get Azure machine learning workspace
@@ -71,9 +72,10 @@ def main():
                                name = 'mnist-dataset',
                                description='training and test dataset',
                                create_new_version=True)
-
     
+    from azureml.core.dataset import Dataset
     dataset = Dataset.get_by_name(aml_workspace, 'mnist-dataset')
+    
 
     # Create a PipelineData to pass data between steps
     pipeline_data = PipelineData(
