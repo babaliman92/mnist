@@ -11,17 +11,17 @@ import json
 
 import matplotlib.pyplot as plt
 
-# import keras
-# from keras.models import Sequential, model_from_json
-# from keras.layers import Dense
-# from keras.optimizers import RMSprop
-# from keras.callbacks import Callback
+import keras
+from keras.models import Sequential, model_from_json
+from keras.layers import Dense
+from keras.optimizers import RMSprop
+from keras.callbacks import Callback
 
-from tensorflow import keras
-from tensorflow.keras.models import Sequential, model_from_json
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.optimizers import RMSprop
-from tensorflow.keras.callbacks import Callback
+# from tensorflow import keras
+# from tensorflow.keras.models import Sequential, model_from_json
+# from tensorflow.keras.layers import Dense
+# from tensorflow.keras.optimizers import RMSprop
+# from tensorflow.keras.callbacks import Callback
 
 import tensorflow as tf
 
